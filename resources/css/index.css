@@ -13,12 +13,15 @@ body {
 }
 .container {
     width: 1500px;
-    border: 1px solid red;
     margin: 20px auto;
 }
 
 header {
     width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* right: 0; */
     height: 90px;
     background-color: black;
     color: white;
@@ -35,9 +38,9 @@ header {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 500px 500px 500px;
-    grid-template-columns: 20% 50% 30%;
-    /* grid-gap: 20px; */
+    grid-template-rows: 500px 500px 150px;
+    grid-template-columns: 20% 50% 28.7%;
+    grid-gap: 10px;
 }
 
 .aside-items {
@@ -52,6 +55,23 @@ header {
     background-color: tomato;
     grid-column-start: 2;
     grid-column-end: 4;
+}
+
+
+.content img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px 10px 5px 10px;
+}
+
+.content p {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 .form-area {
