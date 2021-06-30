@@ -178,7 +178,8 @@ header {
 }
 
 .display-area {
-    background-color: green;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    background-color: lightslategray;
     grid-column-start: 3;
     grid-column-end: 4;
 }
