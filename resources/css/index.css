@@ -20,20 +20,26 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    left: 0;
-    /* right: 0; */
-    height: 90px;
-    background-color: black;
+    height: 120px;
+    background-color: #0A1849;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 .logo {
     float: left;
+    padding: 15px 0;
 }
+
+.logo img {
+    display: block;
+    height: 90px;
+    width: 200px;
+}
+
 .title {
     text-align: center;
+    padding: 40px 0;
 }
 
 .grid-container {
@@ -41,6 +47,7 @@ header {
     grid-template-rows: 500px 500px 150px;
     grid-template-columns: 20% 50% 28.7%;
     grid-gap: 10px;
+    background-color: white;
 }
 
 .aside-items {
@@ -52,7 +59,7 @@ header {
 }
 
 .content {
-    background-color: tomato;
+    /* background-color: tomato; */
     grid-column-start: 2;
     grid-column-end: 4;
 }
