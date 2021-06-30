@@ -52,7 +52,7 @@ header {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 500px 500px 150px;
+    grid-template-rows: 500px 500px 200px;
     grid-template-columns: 20% 50% 28.7%;
     grid-gap: 10px;
     background-color: white;
@@ -118,9 +118,63 @@ header {
 }
 
 .form-area {
-    background-color: yellow;
+    box-shadow: 5px 5px 5px #aaaaaa;
     grid-column-start: 2;
     grid-column-end: 3;
+    text-align: center;
+}
+
+.form-area h2 {
+    padding: 20px 0 0 0;
+}
+
+.form-area form {
+    width: fit-content;
+    text-align: center;
+    margin: 20px auto;
+    border: none;
+}
+
+.form-area form .npt {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    color: #0A1849;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.form-area form .npt:focus {
+    background-color: #0A1849;
+    color: white;
+    border: none;
+}
+
+.form-area form button {
+    width: 150px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    border: none;
+    border-radius: 3px;
+    background-color: lightcyan;
+    font-size: 18px;
+    color: #0A1849;
+}
+
+.form-area form button:hover {
+    background-color: #0A1849;
+    color: white;
+}
+
+.choose-color-lable {
+    float: left;
+    padding: 10px 0;
+    color: #0A1849;
+    font-size: 18px;
 }
 
 .display-area {
