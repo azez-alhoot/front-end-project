@@ -6,22 +6,35 @@
     box-sizing: border-box;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 header, aside, section, footer, main {
     display: block;
 }
 
 body {
-    background-color: cyan;
+    background-color: #D1F9FD;
     font-family: 'Fraunces', serif;
 
 }
 .container {
     width: 1500px;
-    margin: 20px auto;
+    margin: 50px auto;
+    background-color: white;
 }
 
 h1, h2 {
     font-family: 'Akaya Kanadaka', cursive;
+    text-shadow: 2px 2px 2px #aaaaaa;
 }
 
 header {
@@ -29,9 +42,11 @@ header {
     position: sticky;
     top: 0;
     height: 120px;
-    background-color: #0A1849;
+    background-color: #203FA1;
+    box-shadow: 5px 5px 5px #aaaaaa;
     color: white;
     text-align: center;
+    z-index: 1;
 }
 
 .logo {
@@ -69,29 +84,34 @@ header {
 }
 
 .aside-items h2 {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    box-shadow: 0px 3px 3px white;
     text-align: center;
     padding: 10px;
-    color:#0A1849;
+    color:#203FA1;
 }
 .aside-items ul li a{
     text-decoration: none;
-    color: #0A1849;
+    color: #203FA1;
     font-size: 18px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #aaaaaa;
+
 }
 
 .aside-items ul li a:hover {
-    color: blue;
+    color: #7CEFFA;
+    text-shadow: none;
 }
 
 .aside-items ul li {
     padding: 10px 10px;
-    border-bottom: 1px solid white;
+    box-shadow: 0px 3px 3px white;
     list-style: none;
 }
 
 .aside-items ul li:last-child{
-    border-bottom: none;
+    box-shadow: 0px 2px 2px white;
 }
 
 .content {
@@ -126,6 +146,7 @@ header {
 
 .form-area h2 {
     padding: 20px 0 0 0;
+    color: #203FA1;
 }
 
 .form-area form {
@@ -139,19 +160,21 @@ header {
     border: none;
     border-radius: 3px;
     box-shadow: 5px 5px 5px #aaaaaa;
-    color: #0A1849;
+    color: #203FA1;
     width: 500px;
-    height: 40px;
+    height: 50px;
     margin-bottom: 20px;
     font-size: 18px;
-    background-color: lightcyan;
+    font-family: 'Fraunces', serif;
+    background-color: #D1F9FD;
     padding: 10px;
 }
 
 .form-area form .npt:focus {
-    background-color: #0A1849;
+    background-color: #203FA1;
+    border: 5px solid #203FA1;
+    border-radius: 3px;
     color: white;
-    border: none;
 }
 
 .form-area form button {
@@ -162,24 +185,25 @@ header {
     border-radius: 3px;
     background-color: lightcyan;
     font-size: 18px;
-    color: #0A1849;
+    font-family: 'Fraunces', serif;
+    color: #203FA1;
 }
 
 .form-area form button:hover {
-    background-color: #0A1849;
+    background-color: #203FA1;
     color: white;
 }
 
 .choose-color-lable {
     float: left;
     padding: 10px 0;
-    color: #0A1849;
+    color: #203FA1;
     font-size: 18px;
 }
 
 .display-area {
     box-shadow: 5px 5px 5px #aaaaaa;
-    background-color: lightslategray;
+    background-color: #D1F9FD;
     grid-column-start: 3;
     grid-column-end: 4;
 }
@@ -202,9 +226,10 @@ footer{
     width: 100%;
     height: 60px;
     box-shadow: 5px 5px 5px #aaaaaa;
-    background-color: #0A1849;
+    background-color: #203FA1;
     text-align: center;
     color: white;
+    margin-top: 10px;
 }
 
 footer p{
