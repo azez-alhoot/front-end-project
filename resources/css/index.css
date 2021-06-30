@@ -51,11 +51,39 @@ header {
 }
 
 .aside-items {
-    background-color: turquoise;
+    background-color: #EE8B39;
+    box-shadow: 5px 5px 5px #aaaaaa;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
+    margin-top: 10px;
+}
+
+.aside-items h2 {
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    color:#0A1849;
+}
+.aside-items ul li a{
+    text-decoration: none;
+    color: #0A1849;
+    font-size: 18px;
+}
+
+.aside-items ul li a:hover {
+    color: blue;
+}
+
+.aside-items ul li {
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    list-style: none;
+}
+
+.aside-items ul li:last-child{
+    border-bottom: none;
 }
 
 .content {
